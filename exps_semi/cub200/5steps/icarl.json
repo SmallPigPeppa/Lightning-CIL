@@ -1,0 +1,15 @@
+{
+    "prefix": "10samples",
+    "dataset": "cub200",
+    "memory_size": 2000,
+    "memory_per_class": 10,
+    "fixed_memory": true,
+    "shuffle": true,
+    "init_cls": 40,
+    "increment": 40,
+    "model_name": "icarl",
+    "convnet_type": "resnet50",
+    "device": ["0"],
+    "seed": [1993]
+}
+

@@ -1,0 +1,24 @@
+{
+    "prefix": "pretrain_0samples",
+    "dataset": "imagenet100",
+    "memory_size": 0,
+    "memory_per_class": 0,
+    "fixed_memory": true,
+    "shuffle": true,
+    "init_cls": 20,
+    "increment": 20,
+    "model_name": "simplecil",
+    "convnet_type": "cosine_resnet50",
+    "device": ["0"],
+    "seed": [1993],
+    "pretrained_model": "/mnt/mmtech01/usr/liuwenzhuo/code/solo-learn/trained_models/byol-official/byol-resnet50-imagenet-100ep-25x5nqle-ep=99.ckpt",
+    
+    "init_epoch": 200,
+    "init_lr": 0.01,
+    "batch_size": 256,
+    "weight_decay": 0.05,
+    "init_lr_decay": 0.1,
+    "init_weight_decay": 5e-4,
+    "min_lr": 0
+}
+
