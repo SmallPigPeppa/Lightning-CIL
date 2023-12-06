@@ -7,13 +7,14 @@ from torch.utils.data import DataLoader
 from utils.toolkit import tensor2numpy, accuracy
 from scipy.spatial.distance import cdist
 import os
+import pytorch_lightning as pl
 
 EPSILON = 1e-8
 batch_size = 64
 
 
 # class BaseLearner(nn.Module):
-class BaseLearner(object):
+class BaseLearner(pl.LightningModule):
     def __init__(self, args):
         # super(BaseLearner, self).__init__()
         self.args = args
